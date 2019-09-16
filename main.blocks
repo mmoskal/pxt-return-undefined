@@ -1,0 +1,38 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="function_definition" x="0" y="16">
+    <mutation name="foo" functionid="X-o,)hs@p%3~;NbmX%y;"></mutation>
+    <field name="function_title">function</field>
+    <field name="function_name">foo</field>
+    <statement name="STACK">
+      <block type="typescript_statement" editable="false">
+        <mutation line0="let x = bar()" numlines="1" declaredvars="x"></mutation>
+        <field name="LINE0">let x = bar()</field>
+        <next>
+          <block type="typescript_statement" editable="false">
+            <mutation line0="return" numlines="1"></mutation>
+            <field name="LINE0">return</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="pxt-on-start" x="0" y="16">
+    <statement name="HANDLER">
+      <block type="typescript_statement" editable="false">
+        <mutation line0="function bar() {" line1="    return &quot;foo123&quot;" line2="}" numlines="3"></mutation>
+        <field name="LINE0">function bar() {</field>
+        <field name="LINE1">    return "foo123"</field>
+        <field name="LINE2">}</field>
+        <next>
+          <block type="typescript_statement" editable="false">
+            <mutation line0="game.onPaint(function () {" line1="    screen.print(&quot;F:&quot; + foo(), 0, 0)" line2="})" numlines="3"></mutation>
+            <field name="LINE0">game.onPaint(function () {</field>
+            <field name="LINE1">    screen.print("F:" + foo(), 0, 0)</field>
+            <field name="LINE2">})</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
